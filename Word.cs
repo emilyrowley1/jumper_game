@@ -3,37 +3,33 @@
 public class Word
 {
     string[] wordArray = {"sugar", "candy", "memphis", "cost", "phone", "crazy", "puppy", "tired", "ring", "picture", "carrot", "goldfish"};
-    int rnd = new Random().Next(12);
     public string randomWord;
     int wordLength;
-    public string[] letters = {};
+    List<string> letters = new List<string>();
 
     public Word()
     {
+        int rnd = new Random().Next(12);
         randomWord = wordArray[rnd];
         wordLength = randomWord.Length;
+        populateLetterList();
     }
 
+    void populateLetterList()
+    {
+        foreach (char letter in randomWord)
+        {
+            letters.Add("_ ");
+        }
+    }
     public void displayUnguessedWord()
     {
-        Console.WriteLine(wordLength);
-
-        for (int i = 0; i < wordLength; i++)
-        {
-            letters.Append("_");
-            Console.WriteLine("appended value");
-        }
-
-        Console.WriteLine(letters);
-        Console.WriteLine(letters.Length);
-
-
         foreach (string letter in letters)
         {
             Console.Write(letter);
-            Console.WriteLine("printing Letter");
         }
     }
+
 
    
 }
