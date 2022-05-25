@@ -4,11 +4,15 @@ public class Director
     {
         Player player1 = new Player();
         Parachute p = new Parachute();
+        Word word = new Word();
 
-        p.displayParachute(player1.livesLeft);
-        player1.looseLife();
-        Console.WriteLine();
-        p.displayParachute(player1.livesLeft);
+        Console.WriteLine(word.randomWord);
+        word.displayUnguessedWord();
+
+        // p.displayParachute(player1.livesLeft);
+        // player1.looseLife();
+        // Console.WriteLine();
+        // p.displayParachute(player1.livesLeft);
     }
 }
 // MEMBER VARIABLE: the word call word.getWord()

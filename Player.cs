@@ -7,11 +7,12 @@ public class Player
         livesLeft -= 1;
     }
 
-    public string getGuess()
-    {
-        Console.WriteLine("Save the SkyDiver! Guess: ");
-        
-    }
+    // public string getGuess()
+    // {
+    //     Console.WriteLine("Save the SkyDiver! Guess: ");
+    //     Console.ReadLine();
+
+    // }
 }
 // MEMBER VARIABLE: list of guesses
 // METHOD: get guess
