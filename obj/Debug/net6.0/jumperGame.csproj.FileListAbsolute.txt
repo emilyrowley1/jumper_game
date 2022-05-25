@@ -1,0 +1,15 @@
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.csproj.AssemblyReference.cache
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.AssemblyInfoInputs.cache
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.AssemblyInfo.cs
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.csproj.CoreCompileInputs.cache
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\bin\Debug\net6.0\jumperGame.exe
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\bin\Debug\net6.0\jumperGame.deps.json
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\bin\Debug\net6.0\jumperGame.runtimeconfig.json
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\bin\Debug\net6.0\jumperGame.dll
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\bin\Debug\net6.0\jumperGame.pdb
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.dll
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\refint\jumperGame.dll
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.pdb
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\jumperGame.genruntimeconfig.cache
+C:\Users\erowl\BYU-Idaho\Spring 2022\CSE 210\week6\jumperGame\obj\Debug\net6.0\ref\jumperGame.dll
