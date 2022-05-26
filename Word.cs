@@ -6,31 +6,48 @@ public class Word
     public string randomWord;
     int wordLength;
     List<string> letters = new List<string>();
+    List<string> unguessed = new List<string>();
 
     public Word()
     {
         int rnd = new Random().Next(12);
         randomWord = wordArray[rnd];
         wordLength = randomWord.Length;
-        populateLetterList();
+        populateLists();
     }
 
-    void populateLetterList()
+    void populateLists()
     {
         foreach (char letter in randomWord)
         {
-            letters.Add("_ ");
+            unguessed.Add("_ ");
+            letters.Add($"{letter}");
         }
     }
     public void displayUnguessedWord()
     {
-        foreach (string letter in letters)
+        foreach (string placeHolder in unguessed)
         {
-            Console.Write(letter);
+            Console.Write(placeHolder);
         }
+        Console.WriteLine();
     }
 
-
+    public bool guessInWord(string guess)
+    {
+        if (randomWord.Contains(guess))
+        {
+           for (int i = 0; i < letters.Count; i++)
+            {
+                if (letters[i] == guess)
+                {
+                    unguessed[i] = letters[i] + " ";
+                }
+            }
+            return true;
+        }
+        return false;
+    }
    
 }
 // MEMBER VARIABLE: array of words

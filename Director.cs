@@ -8,6 +8,9 @@ public class Director
 
         Console.WriteLine(word.randomWord);
         word.displayUnguessedWord();
+        bool correctGuess = word.guessInWord("c");
+        word.guessInWord("a");
+        word.displayUnguessedWord();
 
         // p.displayParachute(player1.livesLeft);
         // player1.looseLife();
