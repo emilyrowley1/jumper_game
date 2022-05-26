@@ -2,6 +2,7 @@ public class Parachute
 /// displayParachute
 {   
     public void displayParachute(int livesLeft)
+    // Displays the current parachute and person based on how many lives they have.
     {
         if (livesLeft >= 8)
         {
@@ -54,4 +55,3 @@ public class Parachute
     }
 
 }
-// METHOD: display parachute method that takes in the number of lives left

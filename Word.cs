@@ -2,21 +2,19 @@
 
 public class Word
 {
-    string[] wordArray = {"sugar", "candy", "memphis", "cost", "phone", "crazy", "puppy", "tired", "ring", "picture", "carrot", "goldfish"};
+    string[] wordArray = {"sugar", "candy", "memphis", "cost", "phone", "crazy", "puppy", "tired", "ring", "picture", "carrot", "goldfish"}; // list of random words
     public string randomWord;
-    int wordLength;
-    List<string> letters = new List<string>();
-    List<string> unguessed = new List<string>();
+    List<string> letters = new List<string>(); //Random word put into a list for comparision purposes
+    List<string> unguessed = new List<string>(); // What the user knows about the word at any given time.
 
     public Word()
     {
-        int rnd = new Random().Next(12);
-        randomWord = wordArray[rnd];
-        wordLength = randomWord.Length;
+        randomWord = wordArray[new Random().Next(12)]; // Picking the random word
         populateLists();
     }
 
     void populateLists()
+    // Puts the word and what the user knows about the word into two separate lists
     {
         foreach (char letter in randomWord)
         {
@@ -25,6 +23,7 @@ public class Word
         }
     }
     public void displayUnguessedWord()
+    // Displays what the user knows about the word so far.
     {
         foreach (string placeHolder in unguessed)
         {
@@ -33,24 +32,37 @@ public class Word
         Console.WriteLine();
     }
 
-    public bool guessInWord(string guess)
+    public bool guessInWord(char guess)
+    // Determines if the user guess was correct
     {
         if (randomWord.Contains(guess))
         {
-           for (int i = 0; i < letters.Count; i++)
-            {
-                if (letters[i] == guess)
-                {
-                    unguessed[i] = letters[i] + " ";
-                }
-            }
             return true;
         }
         return false;
     }
+
+    public void updateUnguessedList(char guess)
+    // Updates what the user can see about the word based on their guess.
+    {
+        for (int i = 0; i < letters.Count; i++)
+            {
+                if (letters[i] == $"{guess}")
+                {
+                    unguessed[i] = letters[i] + " ";
+                }
+            }
+    }
    
+   public bool wordNotGuessed()
+   {
+       foreach (string item in unguessed)
+       {
+           if (item == "_ ")
+           {
+               return true;
+           }
+       }
+        return false;
+   }
 }
-// MEMBER VARIABLE: array of words
-// METHOD: get a random word from the array of words
-// METHOD: display word/lines
-// METHOD: update lines with letters
